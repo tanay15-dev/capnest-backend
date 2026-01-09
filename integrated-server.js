@@ -245,10 +245,10 @@ Format as JSON array.`;
     }
 });
 
-// Serve frontend for all other routes
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/index.html'));
-});
+// Serve frontend for all other routes (DISABLED FOR RENDER BACKEND)
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../frontend/index.html'));
+// });
 
 // Start server
 app.listen(PORT, () => {
@@ -267,3 +267,4 @@ app.listen(PORT, () => {
 });
 
 export default app;
+
